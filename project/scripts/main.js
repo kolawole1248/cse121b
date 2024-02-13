@@ -1,6 +1,6 @@
 // ... (other code)
 const baseUrl = 'https://api.themoviedb.org/3/search/movie';
-const apiKey = 'acda100e10bed5b5a2a47fcd5d11af49'; // Replace with your API key
+const apiKey = 'acda100e10bed5b5a2a47fcd5d11af49';
 
 
 async function searchMovies() {
@@ -12,7 +12,7 @@ async function searchMovies() {
     return;
   }
 
-  // Update the URL construction to include the API key
+  
   const url = `${baseUrl}?api_key=${apiKey}&query=${query}`;
 
   try {
@@ -25,7 +25,7 @@ async function searchMovies() {
   }
 }
 
-// ... (other code)
+
 
 function displayMovies(movies) {
   const resultsContainer = document.getElementById('results-container');
